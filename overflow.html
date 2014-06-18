@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            font: 300 1em 'Helvetica Neue';
+            padding: 3em;
+        }
+        div.container {
+            background-color: #efefef;
+            padding: 0.5em;
+            width: 60%;
+            margin: 0 auto;
+        }
+        div.box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid gray;
+            float: left;
+            font-size: 5em;
+        }
+        span.stars{
+            color: red;
+        }
+        span.stars:hover{
+            color: green;
+        }
+        div.container:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+           <span class="stars">&#8902</span>
+           <span class="stars">&#8902</span>
+           <span class="stars">&#8902</span>
+           <span class="stars">&#8902</span>
+           <span class="stars">&#8902</span>
+       </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>
