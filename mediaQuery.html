@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+
+
+        @media only screen and (min-device-width : 768px) {
+
+            body {
+                font: 300 1em 'Helvetica Neue';
+            }
+
+            nav.nav {
+                background-color: #eee;
+                padding: 1em;
+            }
+
+            nav.nav > ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav.nav li {
+                display: inline-block;
+                color: #777;
+                font-weight: 600;
+                padding: 0.25em 0.5em;
+                cursor: pointer;
+            }
+
+            nav.nav li:hover {
+                color: #333;
+            }
+
+            div.name {
+                margin-top: 1em;
+                font: 300 1em 'Helvetica Neue';
+                padding: 2em;
+                background-color: #eeeeee;
+
+            }
+
+            div.bars {
+                display: none;
+            }
+        }
+
+
+        /* Smaller screens */
+        @media only screen and (max-device-width : 767px) {
+
+            body {
+                font: 300 1em 'Helvetica Neue';
+            }
+
+            nav.nav {
+                background-color: #eee;
+                padding: 1em;
+            }
+
+            nav.nav > ul {
+                display: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav.nav li {
+                display: block;
+                color: #777;
+                font-weight: 600;
+                padding: 0.25em 0.5em;
+                cursor: pointer;
+            }
+
+            nav.nav li:hover {
+                color: #333;
+            }
+
+            div.name {
+                margin-top: 1em;
+                font: 300 1em 'Helvetica Neue';
+                padding: 2em;
+                background-color: black;
+                color: #eee;
+            }
+
+            div.bars {
+                
+                padding: 1em;
+            }
+            div.bar {
+                width: 1.5em;
+                padding: 0.2em;
+                background-color: black;
+            }
+            div.bar:nth-child(2) {
+                margin: 0.2em 0;
+            }
+
+            nav.nav:hover ul {
+                transition: all 500ms linear;
+
+                display: block;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <div class="bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul>
+        <li>Author</li>
+        <li>Popular Books</li>
+        <li>Write a review</li>
+    </ul>
+</nav>
+
+    <div class="name">
+        This is Han
+    </div>
+</body>
+</html>
